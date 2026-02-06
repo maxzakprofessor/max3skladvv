@@ -150,15 +150,18 @@
           idFilter:"",
           goodsWithoutFilter:[],
 //        API_URL:"https://localhost:7141/api/",
-        API_URL:"https://webapistockkz.azurewebsites.net/api/",
+        API_URL:"http://127.0.0.1:8000/",
+//        API_URL:"https://webapistockkz.azurewebsites.net/api/",
       }
   },
   methods:{
       refreshData(){
+        console.log("Отправка запроса на:", this.API_URL+"goods"); // <--- Проверка пути
           axios.get(this.API_URL+"goods")
           .then((response)=>{
               this.goods=response.data;
               this.goodsWithoutFilter=response.data;
+              console.log("Данные от сервера:", response.data); 
           });
       },
       addClick(){

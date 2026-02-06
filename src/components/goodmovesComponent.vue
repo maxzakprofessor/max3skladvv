@@ -151,7 +151,8 @@ data-bs-target="#exampleModal"
         qty:0,
         datetime:"yyyy-MM-dd HH:mm:ss",
 //        API_URL:"https://localhost:7141/api/",
-        API_URL:"https://webapistockkz.azurewebsites.net/api/",
+        API_URL:"http://127.0.0.1:8000/",
+//        API_URL:"https://webapistockkz.azurewebsites.net/api/",
         dateInp:"",
         timeInp:"",
     }
